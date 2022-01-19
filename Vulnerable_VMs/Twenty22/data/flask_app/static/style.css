@@ -1,0 +1,13 @@
+*{
+    font-family: monospace;
+}
+body{
+    background: #000;
+}
+
+#challenge-button{
+    height: 120px;
+    width: 200px;
+    font-size: large;
+    margin-left: 50px;
+}

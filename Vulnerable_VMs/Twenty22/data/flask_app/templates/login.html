@@ -1,0 +1,22 @@
+{%extends "template.html"%}
+
+{%block head%}
+<title>Twenty22 | Login</title>
+{%endblock head%}
+
+{%block body%}
+<div class="container text-white" align="center" style="margin-top: 90px;">
+    <h1><u>Login</u></h1>
+    <form action="/login" style="margin-top: 80px;" method="post">
+        <div class="input-group flex-nowrap" style="width: 50%;height: 40px;">
+            <span class="input-group-text fs-4" id="addon-wrapping"><ion-icon name="person-circle-outline"></ion-icon></span>
+            <input name="username" type="text" class="form-control fs-4" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
+        </div><br>
+        <div class="input-group flex-nowrap" style="width: 50%;height: 40px;">
+            <span class="input-group-text fs-4" id="addon-wrapping"><ion-icon name="lock-closed-outline"></ion-icon></span>
+            <input name="password" type="text" class="form-control fs-4" placeholder="Password" aria-label="Username" aria-describedby="addon-wrapping">
+        </div>
+        <button type="submit" style="height: 40px;width: 100px;margin-top: 40px;" class="btn btn-info">Login</button>
+    </form>
+</div>
+{%endblock body%}

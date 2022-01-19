@@ -1,0 +1,66 @@
+{%extends "template.html"%}
+
+{%block head%}
+<title>Twenty22 | Challenges</title>
+{%endblock head%}
+
+{%block body%} 
+<div class="container text-white" style="margin-top: 50px;">
+    <h1 align="center"><u>Challenges</u></h1><br>
+    <h3 align="center">[ Welcome {%block name%}{%endblock name%}, It's late the CTF has ended ]</h3>
+    <!-- challenges -->
+    <div class="challenges">
+        <h2 style="margin-top: 30px;margin-bottom: 30px;">Web:</h2>
+
+            <!-- web challenge 1 -->
+            <button id="challenge-button" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#webchall-1">AI</button>
+            <div class="modal fade text-dark" id="webchall-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content bg-dark text-white">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">AI</h5>
+                        <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" align="center">
+                        <br>
+                        <img src="../static/web-1.jpg" alt=""><br><br>
+                        <a href="https://jopraveen.github.io/AI/" target="blank"><button type="button" class="btn btn-outline-primary">Challenge site</button></a><br><br>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><ion-icon name="flag"></ion-icon></span>
+                            <input type="text" class="form-control fs-5" placeholder="Your{leeT_fl4g}" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" data-bs-dismiss="toast" onclick="tst()" class="btn btn-primary">Submit flag</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- web challenge2 -->
+            <button id="challenge-button" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#webchall-2">Can you get in?</button>
+            <div class="modal fade text-dark" id="webchall-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content bg-dark text-white">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Can you get in</h5>
+                        <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" align="center">
+                        <br>
+                        <img height="304" src="../static/jspower.jpg" alt=""><br><br>
+                        <a href="https://jopraveen.github.io/CanUgetIn/" target="blank"><button type="button" class="btn btn-outline-primary">Challenge site</button></a><br><br>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text" id="basic-addon1"><ion-icon name="flag"></ion-icon></span>
+                            <input type="text" class="form-control fs-5" placeholder="Your{leeT_fl4g}" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" data-bs-dismiss="toast" onclick="tst()" class="btn btn-primary">Submit flag</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </div>
+</div>
+{%endblock body%} 
